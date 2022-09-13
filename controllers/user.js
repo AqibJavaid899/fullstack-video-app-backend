@@ -1,3 +1,2 @@
-export const test = (req, res) => {
-  res.send("This is the Data. Route is working successfully!");
-};
+import { createError } from "../error.js";
+import User from "../models/User.js";

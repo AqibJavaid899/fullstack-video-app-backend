@@ -31,14 +31,13 @@ app.use("/api/videos", videoRoutes);
 app.use("/api/comments", commentRoutes);
 app.use("/api/auth", authRoutes);
 
-// Error Middleware
 app.use((error, req, res, next) => {
   const status = error.status || 500;
   const message = error.message || "Something went wrong!";
   return res.status(status).json({
     success: false,
-    status: status,
-    message: message,
+    status,
+    message,
   });
 });
 
