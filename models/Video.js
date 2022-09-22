@@ -2,39 +2,39 @@ import mongoose from "mongoose";
 
 const videoSchema = new mongoose.Schema({
   userId: {
-    type: string,
+    type: String,
     required: true,
   },
   title: {
-    type: string,
+    type: String,
     required: true,
   },
   desc: {
-    type: string,
+    type: String,
     required: true,
   },
   imgUrl: {
-    type: string,
+    type: String,
     required: true,
   },
   videoUrl: {
-    type: string,
+    type: String,
     required: true,
   },
   views: {
-    type: number,
+    type: Number,
     default: 0,
   },
   tags: {
-    type: [string],
+    type: [String],
     default: [],
   },
   likes: {
-    type: [string],
+    type: [String],
     default: [],
   },
   dislikes: {
-    type: [string],
+    type: [String],
     default: [],
   },
 });
