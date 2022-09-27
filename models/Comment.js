@@ -2,15 +2,15 @@ import mongoose from "mongoose";
 
 const commentSchema = new mongoose.Schema({
   userId: {
-    type: string,
+    type: String,
     required: true,
   },
   videoId: {
-    type: string,
+    type: String,
     required: true,
   },
   desc: {
-    type: string,
+    type: String,
     required: true,
   },
 });
