@@ -38,7 +38,7 @@ router.get("/random", getRandomVideos);
 router.put("/view/:id", incrementVideoViewCount);
 
 // Get the list of Videos from all the Subscribed Channels
-router.get("/subscribedVideos", verifyToken, getSubscribedChannelVideos);
+router.get("/subscription", verifyToken, getSubscribedChannelVideos);
 
 // Get the Videos based on the Specified Tags in the Query Parameters
 router.get("/searchByTags", getVideosByTags);

@@ -18,7 +18,7 @@ router.put("/update/:id", verifyToken, updateUser);
 // Delete the User
 router.delete("/delete/:id", verifyToken, deleteUser);
 
-// Delete the User
+// Get a User using UserId
 router.get("/get/:id", getUser);
 
 // Subscribe the User

@@ -142,6 +142,6 @@ export const getVideosByTitle = async (req, res, next) => {
       next(error);
     }
   } else {
-    next(createError(404, "Video Tags are missing!"));
+    next(createError(404, "Video Title is missing!"));
   }
 };
